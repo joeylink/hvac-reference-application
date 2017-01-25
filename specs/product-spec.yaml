@@ -1,4 +1,3 @@
----
 resources:
 # GWE resources.
 - alias: usage_report
