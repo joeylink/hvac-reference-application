@@ -1,5 +1,4 @@
 resources:
-# GWE resources.
 - alias: usage_report
   format: string
 - alias: engine_report
