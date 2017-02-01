@@ -1,18 +1,20 @@
 {
-  "assets": "files",
   "default_page": "index.html",
-  "services": {
+  "file_dir": "files",
+  "custom_api": "product/routes.lua",
+  "custom_api_hook": "_init",
+  "modules": {
+    "auth": "modules/util.lua",
+    "GWE": "modules/GWE.lua",
+    "auth-table": "modules/table.util.lua"
+  },
+  "event_handler": {
     "device": {
-      "datapoint": "../eventhandlers/device_datapoint.lua"
+      "datapoint": "eventhandlers/device_datapoint.lua"
     },
     "timer": {
-      "timer": "../eventhandlers/timer_timer.lua"
+      "timer": "eventhandlers/timer_timer.lua"
     }
   },
-  "modules": {
-    "GWE": "../modules/GWE.lua",
-    "table": "../modules/table.util.lua",
-    "util": "../modules/util.lua"
-  },
-  "routes": "routes.lua"
+  "cors": {"origin": ["http://localhost:*"]}
 }
