@@ -24,7 +24,9 @@ resources:
   format: float
 - alias: heat_on
   format: integer
+  initial: 1
 - alias: ac_on
   format: integer
+  initial: 0
 - alias: change
   format: integer
